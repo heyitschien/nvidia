@@ -1,0 +1,28 @@
+# Ignore Isaac Sim installation directory
+isaac-sim-standalone@4.5.0-rc.36+release.19112.f59b3005.gl.linux-x86_64.release/
+
+# Ignore downloaded zip files
+*.zip
+
+# Ignore large data files
+*.bin
+*.dat
+*.model
+
+# Ignore logs
+logs/
+*.log
+
+# Ignore cache directories
+.cache/
+__pycache__/
+*.pyc
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore any temporary files
+*.tmp
+*.bak
+*.swp

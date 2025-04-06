@@ -1,0 +1,23 @@
+version: '3'
+services:
+  ros2_dev:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "6080:6080"  # noVNC web interface
+      - "5900:5900"  # VNC
+    environment:
+      - RESOLUTION=1920x1080
+      - VNC_PASSWORD=rosdev
+    volumes:
+      - .:/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - shared-mem:/dev/shm
+    privileged: true
+    shm_size: '2gb'
+    command: /startup.sh
+    restart: unless-stopped
+
+volumes:
+  shared-mem: 
