@@ -1,5 +1,7 @@
-# Robotics Interface Development
+# NVIDIA Robotics Interface Development
 ## Resources and Implementation Guides
+
+This repository contains setup guides, documentation, and resources for NVIDIA robotics technologies, including Isaac Sim, Omniverse, and related tools.
 
 ## Directory Structure
 
